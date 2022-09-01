@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <title> DateAndTmeSetMethod</title>
+    </head>
+
+<body>
+    <p> Click the button to date after changing the hours </p>
+    <button onclick = "myFunction()"> Try it </button>
+    <p id = "demo"></p>
+    <script>
+        //function myFunction(){
+        //    var t = new Date();
+        //    t.setHours(5);
+        //    document.getElementById("demo").innerHTML = t;
+        //}
+        (function(){
+            setInterval(()=> {
+                var d = new Date().toLocaleTimeString();
+                document.getElementById("demo").innerHTML = d;
+            },1000)
+        })();
+    </script>
+    
+</body>
+</html>
